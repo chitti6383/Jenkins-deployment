@@ -10,7 +10,7 @@ RUN sed -i 's/Listen 80/Listen 8080/' /etc/httpd/conf/httpd.conf
 # Also update VirtualHost
 RUN sed -i 's/<VirtualHost \*:80>/<VirtualHost *:8080>/' /etc/httpd/conf/httpd.conf
 
-COPY public.html /var/www/html/
+COPY chitti.html /var/www/html/
 
 EXPOSE 8080
 
